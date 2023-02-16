@@ -1,74 +1,17 @@
 <template>
-  <v-container class="fill-height">
-    <v-responsive class="d-flex align-center text-center fill-height">
-      <v-img contain height="240" src="@/assets/logo.svg" />
-      <blockquote class="blockquote text-h5">
-        &#8220;Primeiro, resolva o problema. Depois, escreva o código.&#8221;
-        <footer>
-          <small>
-            <em>&mdash; John Johnson &mdash;</em>
-          </small>
-        </footer>
-      </blockquote>
+  <div>
+   <v-row align="center" justify="center" class="hero" no-gutters>
+       <v-col cols="12" xl="2" lg="2" />
+       <v-col cols="12" xl="8" lg="8">
+         <v-container>
+            <p class="font-1  font-title white--text">Discover Your Life, Travel Where You Want</p>
+          <p class="font-4 font-desc  white--text">Would you explore natur paradise in the world, let’s find the best destination in world with us.</p>
+         </v-container>
+       </v-col>
+       <v-col cols="12" xl="2" lg="2" />
 
-      <div class="text-body-1 mb-n1 pt-4">Bem-vindo ao template</div>
-      <h1 class="text-h2 font-weight-bold">Djàvue</h1>
-      <code>Vue3 + Vuetify + Vite</code>
-
-      <div class="py-6" />
-
-      <v-row class="d-flex align-center justify-center">
-        <v-col cols="auto">
-          <v-btn
-            color="primary"
-            :to="{ name: 'base-getstarted' }"
-            min-width="228"
-            rel="noopener noreferrer"
-            size="x-large"
-            variant="flat"
-            class="my-4">
-            <v-icon icon="mdi-speedometer" size="large" start />
-            Get Started
-          </v-btn>
-          <v-btn
-            v-if="!loggedUser"
-            color="primary"
-            min-width="228"
-            rel="noopener noreferrer"
-            size="x-large"
-            variant="flat"
-            :to="{ name: 'accounts-login' }"
-            class="my-4">
-            <v-icon icon="mdi-account-arrow-right-outline" size="large" start />
-            Login
-          </v-btn>
-          <v-btn
-            v-else
-            color="primary"
-            min-width="228"
-            rel="noopener noreferrer"
-            size="x-large"
-            variant="flat"
-            :to="{ name: 'accounts-logout' }">
-            <v-icon icon="mdi-account-arrow-right-outline" size="large" start />
-            Logout
-          </v-btn>
-          <v-btn
-            v-if="loggedUser"
-            color="primary"
-            min-width="228"
-            rel="noopener noreferrer"
-            size="x-large"
-            variant="flat"
-            :to="{ name: 'tasks-list' }"
-            class="my-4">
-            <v-icon icon="mdi-folder-star-multiple" size="large" start />
-            tarefas
-          </v-btn>
-        </v-col>
-      </v-row>
-    </v-responsive>
-  </v-container>
+    </v-row>
+  </div>
 </template>
 
 <script>
@@ -81,3 +24,37 @@ export default {
   },
 }
 </script>
+
+<style>
+.hero{
+  height :140vh;
+  background: url('../../assets/images/hero.png');
+  background-size: cover;
+}
+.font-title{
+  font-weight: 600;
+  text-align: center;
+}
+.font-desc{
+  font-weight: 500;
+  text-align: center;
+}
+
+@media screen and (max-width:600px) {
+  .hero{
+  height :120vh;
+  background: url('../../assets/images/hero.png');
+  background-size: cover;
+  padding: 5%;
+}
+    .font-title{
+      text-align: left;
+      line-height: 1.2;
+    }
+
+    .font-desc{
+        font-weight: 500;
+        text-align: left;
+    }
+}
+</style>
