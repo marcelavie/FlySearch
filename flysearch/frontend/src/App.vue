@@ -10,7 +10,7 @@
       flat
     >
       <div class="d-flex align-center">
-     <p class="font-2 mb-n1" :style="`color:${colo}`">Treloo</p>
+     <p class="font-2 mb-n1" :style="`color:${colo}`">flysearch</p>
       </div>
 
       <v-spacer></v-spacer>
@@ -32,7 +32,7 @@
      <v-container>
        <div class="d-sm-none d-md-flex">
           <v-row no-gutters style="" class="footer d-none d-sm-flex ">
-            <p class="font-7">© 2022 Treloo LLC - All right reserved.</p>
+            <p class="font-7">© 2022 flysearch LLC - All right reserved.</p>
             <v-spacer></v-spacer>
             <div class="jst" style="display:flex">
                 <v-btn style="flex:1;text-transform:none" class="font-7 mr-2" x-small text plain>Review</v-btn>
@@ -52,7 +52,7 @@
                 <v-btn style="flex:1;text-transform:none" class="font-7 mr-2" x-small text plain>Alerts</v-btn>
                 <v-btn style="flex:1;text-transform:none" class="font-7 mr-2" x-small text plain>Blog</v-btn>
             </div>
-             <p class="font-7 text-center">© 2022 Treloo LLC - All right reserved.</p>
+             <p class="font-7 text-center">© 2022 flysearch LLC - All right reserved.</p>
             </div>
             <v-spacer></v-spacer>
       </v-row>
