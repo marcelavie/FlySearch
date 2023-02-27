@@ -6,7 +6,7 @@
          <v-container>
             <p class="font-1  font-title white--text">Discover Your Life, Travel Where You Want</p>
           <p class="font-4 font-desc  white--text">Would you explore natur paradise in the world, let’s find the best destination in world with us.</p>
-         </v-container>
+        </v-container>
        </v-col>
        <v-col cols="12" xl="2" lg="2" />
 

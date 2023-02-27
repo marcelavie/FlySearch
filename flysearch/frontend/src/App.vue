@@ -27,6 +27,7 @@
 
     <v-main>
       <router-view/>
+      <searchbar/>
     </v-main>
     <v-footer class="bg-1 ">
      <v-container>
@@ -63,8 +64,13 @@
 
 <script>
 import "./css/fonts.css"
+import searchbar from "./components/searchbar.vue";
+
 export default {
   name: 'App',
+  components:{
+    searchbar
+  },
 
   data: () => ({
     //
