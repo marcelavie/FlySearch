@@ -1,5 +1,30 @@
 <template>
   <div>
+    <v-app-bar
+      :color="color"
+     
+      class=""
+      fixed
+      style="padding:0 5%"
+      dark
+      flat
+    >
+      <div class="d-flex align-center">
+     <p class="font-2 mb-n1" :style="`color:${colo}`">flysearch</p>
+      </div>
+
+      <v-spacer></v-spacer>
+     <div class="d-none d-sm-flex">
+       <div class="d-flex align-center">
+        <v-btn style="text-transform:none" class="font-7" text plain>Review</v-btn>
+      <v-btn style="text-transform:none" class="font-7" text plain>Tips</v-btn>
+      <v-btn style="text-transform:none" class="font-7" text plain>Alerts</v-btn>
+      <v-btn style="text-transform:none" large class="font-7 white blue--text"  >Blog</v-btn>
+     </div>
+     </div>
+     <v-app-bar-nav-icon class="d-flex d-sm-none"/>
+    </v-app-bar>
+    
    <v-row align="center" justify="center" class="hero" no-gutters>
        <v-col cols="12" xl="2" lg="2" />
        <v-col cols="12" xl="8" lg="8">

@@ -9,7 +9,10 @@
                           <br>
                           <p class="font-7 mb-n1">Living from</p>
                           <!-- <p class="font-7 mb-n1 weight-600">Dubai</p> -->
-                          <v-text-field value="" color="white" background-color="" class="ml-n3 mb-n1 weight-600 font-7"  solo dense flat></v-text-field>
+                          <v-autocomplete
+                            label="Autocomplete"
+                            :items="['California', 'Colorado', 'Florida', 'Georgia', 'Texas', 'Wyoming']"
+                            ></v-autocomplete>
                       </div>
                       <div style="flex:1">
                           <v-avatar size="26" style="border:2px dotted grey">
